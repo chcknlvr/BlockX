@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "blockx",
+  "version": "1.0",
+  "name": "BlockX",
+  "description": "A mod that tries to be a massive minecraft overhaul that stays with the latest versions of Minecraft.",
+  "authors": [
+    "chcknlvr"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/blockx/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "blockx.blockx.client.BlockxClient"
+    ],
+    "main": [
+      "blockx.blockx.Blockx"
+    ]
+  },
+  "mixins": [
+    "blockx.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.11.0",
+    "fabric": ">=0.25.0",
+    "minecraft": ">=1.16.0"
+  }
+}

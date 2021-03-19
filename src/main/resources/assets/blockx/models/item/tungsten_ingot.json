@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "blockx:item/tungsten_ingot"
+  }
+}
