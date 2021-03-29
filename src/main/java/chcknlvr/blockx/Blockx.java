@@ -34,6 +34,10 @@ public class Blockx implements ModInitializer {
                 stacks.add(new ItemStack(Blockx.TUNGSTEN_HOE));
                 stacks.add(new ItemStack(Blockx.WOLFRAMITE));
                 stacks.add(new ItemStack(Blockx.TUNGSTEN_INGOT));
+                stacks.add(new ItemStack(RegisterItems.TUNGSTEN_HELMET));
+                stacks.add(new ItemStack(RegisterItems.TUNGSTEN_CHESTPLATE));
+                stacks.add(new ItemStack(RegisterItems.TUNGSTEN_LEGGINGS));
+                stacks.add(new ItemStack(RegisterItems.TUNGSTEN_BOOTS));
             })
             .build();
 
