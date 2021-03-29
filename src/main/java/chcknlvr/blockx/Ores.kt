@@ -1,12 +1,9 @@
 package chcknlvr.blockx
 
-import net.minecraft.world.gen.feature.ConfiguredFeature
 import net.minecraft.world.gen.feature.OreFeatureConfig
-import chcknlvr.blockx.Blockx
 import net.minecraft.world.gen.decorator.Decorator
 import net.minecraft.world.gen.decorator.RangeDecoratorConfig
 import net.minecraft.util.registry.BuiltinRegistries
-import chcknlvr.blockx.Ores
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications
 import net.fabricmc.fabric.api.biome.v1.BiomeSelectors
 import net.minecraft.util.Identifier
