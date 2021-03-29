@@ -13,6 +13,7 @@ import net.minecraft.util.registry.Registry;
 
 public class Blockx implements ModInitializer {
     //Items
+    public static final Item TUNGSTEN_SCRAP = new FireProofItem(new FabricItemSettings().group(ItemGroup.MISC));
     public static final Item TUNGSTEN_INGOT = new FireProofItem(new FabricItemSettings().group(ItemGroup.MISC));
     public static ToolItem TUNGSTEN_SWORD = new CustomFireproofSwordItem(TungstenMaterial.INSTANCE, 10, -3.0F, new Item.Settings().group(ItemGroup.COMBAT));
     public static ToolItem TUNGSTEN_SHOVEL = new CustomFireproofShovelItem(TungstenMaterial.INSTANCE, 1.5F, -3.0F, new Item.Settings().group(ItemGroup.TOOLS));
@@ -44,6 +45,7 @@ public class Blockx implements ModInitializer {
     @Override
     public void onInitialize() {
         //Register Items
+        Registry.register(Registry.ITEM, new Identifier("blockx", "tungsten_scrap"), TUNGSTEN_SCRAP);
         Registry.register(Registry.ITEM, new Identifier("blockx", "tungsten_ingot"), TUNGSTEN_INGOT);
         Registry.register(Registry.ITEM, new Identifier("blockx", "tungsten_sword"), TUNGSTEN_SWORD);
         Registry.register(Registry.ITEM, new Identifier("blockx", "tungsten_shovel"), TUNGSTEN_SHOVEL);

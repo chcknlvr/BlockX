@@ -1,9 +1,32 @@
 {
-  "type": "minecraft:smelting",
-  "ingredient": {
-    "item": "blockx:wolframite_block"
-  },
-  "result": "blockx:tungsten_ingot",
-  "experience": 5,
-  "cookingtime": 200
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "blockx:tungsten_scrap"
+    },
+    {
+      "item": "blockx:tungsten_scrap"
+    },
+    {
+      "item": "blockx:tungsten_scrap"
+    },
+    {
+      "item": "blockx:tungsten_scrap"
+    },
+    {
+      "item": "minecraft:diamond"
+    },
+    {
+      "item": "minecraft:diamond"
+    },
+    {
+      "item": "minecraft:diamond"
+    },
+    {
+      "item": "minecraft:diamond"
+    }
+  ],
+  "result": {
+    "item": "blockx:tungsten_ingot"
+  }
 }
