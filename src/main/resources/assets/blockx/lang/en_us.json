@@ -4,7 +4,11 @@
   "item.blockx.tungsten_axe": "Tungsten Axe",
   "item.blockx.tungsten_pickaxe": "Tungsten Pickaxe",
   "item.blockx.tungsten_shovel": "Tungsten Shovel",
-  "item.blockx.tungsten_hoe": "Tungsten hoe",
+  "item.blockx.tungsten_hoe": "Tungsten Hoe",
   "block.blockx.wolframite": "Wolframite",
-  "itemGroup.blockx.blockx": "BlockX Items"
+  "itemGroup.blockx.blockx": "BlockX Items",
+  "item.blockx.tungsten_helmet": "Tungsten Helmet",
+  "item.blockx.tungsten_chestplate": "Tungsten Chestplate",
+  "item.blockx.tungsten_leggings": "Tungsten Leggings",
+  "item.blockx.tungsten_boots": "Tungsten Boots"
 }
