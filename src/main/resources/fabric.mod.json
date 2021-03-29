@@ -13,10 +13,10 @@
   "environment": "*",
   "entrypoints": {
     "client": [
-      "blockx.blockx.client.BlockxClient"
+      "chcknlvr.blockx.client.BlockxClient"
     ],
     "main": [
-      "blockx.blockx.Blockx"
+      "chcknlvr.blockx.Blockx"
     ]
   },
   "mixins": [

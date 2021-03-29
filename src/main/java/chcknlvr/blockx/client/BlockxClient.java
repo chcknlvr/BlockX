@@ -1,4 +1,4 @@
-package blockx.blockx.client;
+package chcknlvr.blockx.client;
 
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.api.EnvType;
