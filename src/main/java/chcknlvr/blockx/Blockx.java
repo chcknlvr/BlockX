@@ -22,6 +22,7 @@ public class Blockx implements ModInitializer {
     public static ToolItem TUNGSTEN_HOE = new CustomFireproofHoeItem(TungstenMaterial.INSTANCE, -9, 0.0F, new Item.Settings().group(ItemGroup.TOOLS));
     //Blocks
     public static final Block WOLFRAMITE = new Block(FabricBlockSettings.of(Material.METAL).strength(45.0f));
+    public static final Block TUNGSTEN_BLOCK = new Block(FabricBlockSettings.of(Material.METAL).strength(45.0f));
 
     //Item Groups
     public static final ItemGroup BLOCKX = FabricItemGroupBuilder.create(
@@ -55,6 +56,8 @@ public class Blockx implements ModInitializer {
         //Register Blocks and BlockItems
         Registry.register(Registry.BLOCK, new Identifier("blockx", "wolframite"), WOLFRAMITE);
         Registry.register(Registry.ITEM, new Identifier("blockx", "wolframite_block"), new BlockItem(WOLFRAMITE, new FabricItemSettings().group(ItemGroup.MISC)));
+        Registry.register(Registry.BLOCK, new Identifier("blockx", "tungsten_block"), TUNGSTEN_BLOCK);
+        Registry.register(Registry.ITEM, new Identifier("blockx", "tungsten_block"), new BlockItem(TUNGSTEN_BLOCK, new FabricItemSettings().group(ItemGroup.MISC)));
 
         Ores.oreRegister();
         RegisterItems.register();
