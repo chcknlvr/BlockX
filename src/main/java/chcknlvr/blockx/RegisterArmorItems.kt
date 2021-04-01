@@ -1,16 +1,13 @@
 package chcknlvr.blockx
 
 import net.minecraft.item.ArmorMaterial
-import chcknlvr.blockx.tungstenArmorMaterial
 import net.minecraft.item.ArmorItem
-import chcknlvr.blockx.RegisterItems
 import net.minecraft.entity.EquipmentSlot
-import chcknlvr.blockx.Blockx
 import net.minecraft.item.Item
 import net.minecraft.util.Identifier
 import net.minecraft.util.registry.Registry
 
-object RegisterItems {
+object RegisterArmorItems {
     val TUNGSTEN_ARMOR_MATERIAL: ArmorMaterial = tungstenArmorMaterial()
     @JvmField
     val TUNGSTEN_HELMET: Item =
