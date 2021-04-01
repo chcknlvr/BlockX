@@ -36,10 +36,10 @@ public class Blockx implements ModInitializer {
                 stacks.add(new ItemStack(Blockx.TUNGSTEN_HOE));
                 stacks.add(new ItemStack(Blockx.WOLFRAMITE));
                 stacks.add(new ItemStack(Blockx.TUNGSTEN_INGOT));
-                stacks.add(new ItemStack(RegisterItems.TUNGSTEN_HELMET));
-                stacks.add(new ItemStack(RegisterItems.TUNGSTEN_CHESTPLATE));
-                stacks.add(new ItemStack(RegisterItems.TUNGSTEN_LEGGINGS));
-                stacks.add(new ItemStack(RegisterItems.TUNGSTEN_BOOTS));
+                stacks.add(new ItemStack(RegisterArmorItems.TUNGSTEN_HELMET));
+                stacks.add(new ItemStack(RegisterArmorItems.TUNGSTEN_CHESTPLATE));
+                stacks.add(new ItemStack(RegisterArmorItems.TUNGSTEN_LEGGINGS));
+                stacks.add(new ItemStack(RegisterArmorItems.TUNGSTEN_BOOTS));
             })
             .build();
 
@@ -60,7 +60,7 @@ public class Blockx implements ModInitializer {
         Registry.register(Registry.ITEM, new Identifier("blockx", "tungsten_block"), new BlockItem(TUNGSTEN_BLOCK, new FabricItemSettings().group(ItemGroup.MISC)));
 
         Ores.oreRegister();
-        RegisterItems.register();
+        RegisterArmorItems.register();
 
     }
 

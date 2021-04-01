@@ -18,7 +18,7 @@ object Ores {
             OreFeatureConfig(
                 OreFeatureConfig.Rules.BASE_STONE_NETHER,
                 Blockx.WOLFRAMITE.defaultState,
-                4
+                2
             )
         ) // vein size
         .decorate(
