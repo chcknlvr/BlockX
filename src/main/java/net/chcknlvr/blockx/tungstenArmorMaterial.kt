@@ -1,11 +1,9 @@
-package chcknlvr.blockx
+package net.chcknlvr.blockx
 
-import net.minecraft.item.ArmorMaterial
 import net.minecraft.entity.EquipmentSlot
-import chcknlvr.blockx.tungstenArmorMaterial
-import net.minecraft.sound.SoundEvent
+import net.minecraft.item.ArmorMaterial
 import net.minecraft.recipe.Ingredient
-import chcknlvr.blockx.Blockx
+import net.minecraft.sound.SoundEvent
 import net.minecraft.sound.SoundEvents
 
 class tungstenArmorMaterial : ArmorMaterial {

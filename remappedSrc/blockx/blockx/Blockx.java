@@ -14,14 +14,13 @@ import net.minecraft.util.registry.Registry;
 public class Blockx implements ModInitializer {
     //Items
     public static final Item TUNGSTEN_INGOT = new FireProofItem(new FabricItemSettings().group(ItemGroup.MISC));
+    //Blocks
+    public static final Block WOLFRAMITE = new Block(FabricBlockSettings.of(Material.METAL).strength(45.0f));
     public static ToolItem TUNGSTEN_SWORD = new CustomFireproofSwordItem(TungstenMaterial.INSTANCE, 10, -3.0F, new Item.Settings().group(ItemGroup.COMBAT));
     public static ToolItem TUNGSTEN_SHOVEL = new CustomFireproofShovelItem(TungstenMaterial.INSTANCE, 1.5F, -3.0F, new Item.Settings().group(ItemGroup.TOOLS));
     public static ToolItem TUNGSTEN_PICKAXE = new CustomFireproofPickaxeItem(TungstenMaterial.INSTANCE, 1, -2.8F, new Item.Settings().group(ItemGroup.TOOLS));
     public static ToolItem TUNGSTEN_AXE = new CustomFireproofAxeItem(TungstenMaterial.INSTANCE, 15, -3.5F, new Item.Settings().group(ItemGroup.TOOLS));
     public static ToolItem TUNGSTEN_HOE = new CustomFireproofHoeItem(TungstenMaterial.INSTANCE, -9, 0.0F, new Item.Settings().group(ItemGroup.TOOLS));
-    //Blocks
-    public static final Block WOLFRAMITE = new Block(FabricBlockSettings.of(Material.METAL).strength(45.0f));
-
     //Item Groups
     public static final ItemGroup BLOCKX = FabricItemGroupBuilder.create(
             new Identifier("blockx", "blockx"))
@@ -72,11 +71,13 @@ public class Blockx implements ModInitializer {
             super(material, attackDamage, attackSpeed, settings.fireproof());
         }
     }
+
     public static class CustomFireproofSwordItem extends SwordItem {
         public CustomFireproofSwordItem(ToolMaterial material, int attackDamage, float attackSpeed, Settings settings) {
             super(material, attackDamage, attackSpeed, settings.fireproof());
         }
     }
+
     public static class CustomFireproofShovelItem extends ShovelItem {
         public CustomFireproofShovelItem(ToolMaterial material, float attackDamage, float attackSpeed, Settings settings) {
             super(material, attackDamage, attackSpeed, settings.fireproof());
