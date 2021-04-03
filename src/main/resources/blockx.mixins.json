@@ -1,11 +1,14 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "chcknlvr.blockx.mixin",
+  "package": "net.chcknlvr.blockx.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
   ],
   "client": [
+    "ArmorItemMixin"
+  ],
+  "server": [
   ],
   "injectors": {
     "defaultRequire": 1

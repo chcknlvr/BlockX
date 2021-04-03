@@ -1,7 +1,7 @@
 package net.chcknlvr.blockx;
 
 
-import net.chcknlvr.blockx.entity.CubeEntity;
+import net.chcknlvr.blockx.entity.DarkZombieEntity;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
@@ -19,10 +19,10 @@ import net.minecraft.util.registry.Registry;
 
 public class Blockx implements ModInitializer {
     //Register entity
-    public static final EntityType<CubeEntity> CUBE = Registry.register(
+    public static final EntityType<DarkZombieEntity> DARK_ZOMBIE = Registry.register(
             Registry.ENTITY_TYPE,
-            new Identifier("blockx", "cube"),
-            FabricEntityTypeBuilder.create(SpawnGroup.CREATURE, CubeEntity::new).dimensions(EntityDimensions.fixed(0.75f, 0.75f)).build()
+            new Identifier("blockx", "dark_zombie"),
+            FabricEntityTypeBuilder.create(SpawnGroup.CREATURE, DarkZombieEntity::new).dimensions(EntityDimensions.fixed(1f, 2f)).build()
     );
     //Items
     public static final Item TUNGSTEN_SCRAP = new FireProofItem(new FabricItemSettings().group(ItemGroup.MISC));
@@ -56,7 +56,7 @@ public class Blockx implements ModInitializer {
 
     @Override
     public void onInitialize() {
-        FabricDefaultAttributeRegistry.register(CUBE, CubeEntity.createMobAttributes());
+        FabricDefaultAttributeRegistry.register(DARK_ZOMBIE, DarkZombieEntity.createMobAttributes());
         //Register Items
         Registry.register(Registry.ITEM, new Identifier("blockx", "tungsten_scrap"), TUNGSTEN_SCRAP);
         Registry.register(Registry.ITEM, new Identifier("blockx", "tungsten_ingot"), TUNGSTEN_INGOT);

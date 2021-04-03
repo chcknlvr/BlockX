@@ -36,12 +36,12 @@ class tungstenArmorMaterial : ArmorMaterial {
     }
 
     override fun getKnockbackResistance(): Float {
-        return 0.0f
+        return 0.9f
     } // In which A is helmet, B chestplate, C leggings and D boots.
 
     // For reference, Leather uses {1, 2, 3, 1}, and Diamond/Netherite {3, 6, 8, 3}
     companion object {
         private val BASE_DURABILITY = intArrayOf(13, 15, 16, 11)
-        private val PROTECTION_VALUES = intArrayOf(4, 7, 9, 4)
+        private val PROTECTION_VALUES = intArrayOf(5, 22, 22, 5)
     }
 }

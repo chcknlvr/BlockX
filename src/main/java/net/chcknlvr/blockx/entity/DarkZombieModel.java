@@ -5,15 +5,16 @@ import net.minecraft.client.render.VertexConsumer;
 import net.minecraft.client.render.entity.model.EntityModel;
 import net.minecraft.client.util.math.MatrixStack;
 
-public class CubeEntityModel extends EntityModel<CubeEntity> {
+public class DarkZombieModel extends EntityModel<DarkZombieEntity> {
     private final ModelPart base;
 
-    public CubeEntityModel() {
+    public DarkZombieModel() {
         base = new ModelPart(this, 0, 0);
         base.addCuboid(-6, -6, -6, 12, 12, 12);
     }
+
     @Override
-    public void setAngles(CubeEntity entity, float limbAngle, float limbDistance, float animationProgress, float headYaw, float headPitch) {
+    public void setAngles(DarkZombieEntity entity, float limbAngle, float limbDistance, float animationProgress, float headYaw, float headPitch) {
 
     }
 
