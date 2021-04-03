@@ -6,11 +6,14 @@ import net.minecraft.client.render.entity.model.EntityModel;
 import net.minecraft.client.util.math.MatrixStack;
 
 public class DarkZombieModel extends EntityModel<DarkZombieEntity> {
+
     private final ModelPart base;
 
     public DarkZombieModel() {
         base = new ModelPart(this, 0, 0);
         base.addCuboid(-6, -6, -6, 12, 12, 12);
+        this.textureHeight = 64;
+        this.textureWidth = 64;
     }
 
     @Override
@@ -25,6 +28,5 @@ public class DarkZombieModel extends EntityModel<DarkZombieEntity> {
 
         // render cube
         base.render(matrices, vertices, light, overlay);
-
     }
 }

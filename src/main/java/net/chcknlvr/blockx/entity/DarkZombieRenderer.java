@@ -12,6 +12,6 @@ public class DarkZombieRenderer extends MobEntityRenderer<DarkZombieEntity, Dark
 
     @Override
     public Identifier getTexture(DarkZombieEntity entity) {
-        return new Identifier("blockx", "textures/entity/cube/cube.png");
+        return new Identifier("blockx", "textures/entity/dark_zombie/dark_zombie.png");
     }
 }
