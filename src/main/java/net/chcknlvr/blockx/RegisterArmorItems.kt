@@ -8,7 +8,7 @@ import net.minecraft.util.Identifier
 import net.minecraft.util.registry.Registry
 
 object RegisterArmorItems {
-    val TUNGSTEN_ARMOR_MATERIAL: ArmorMaterial = tungstenArmorMaterial()
+    val TUNGSTEN_ARMOR_MATERIAL: ArmorMaterial = TungstenArmorMaterial()
 
     @JvmField
     val TUNGSTEN_HELMET: Item =

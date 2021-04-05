@@ -54,9 +54,11 @@ public class Blockx implements ModInitializer {
             })
             .build();
 
+
     @Override
     public void onInitialize() {
         FabricDefaultAttributeRegistry.register(DARK_ZOMBIE, DarkZombieEntity.createMobAttributes());
+
         //Register Items
         Registry.register(Registry.ITEM, new Identifier("blockx", "tungsten_scrap"), TUNGSTEN_SCRAP);
         Registry.register(Registry.ITEM, new Identifier("blockx", "tungsten_ingot"), TUNGSTEN_INGOT);
@@ -105,4 +107,5 @@ public class Blockx implements ModInitializer {
             super(material, attackDamage, attackSpeed, settings.fireproof());
         }
     }
+
 }

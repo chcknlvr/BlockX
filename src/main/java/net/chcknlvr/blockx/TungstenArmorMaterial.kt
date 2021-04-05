@@ -6,9 +6,9 @@ import net.minecraft.recipe.Ingredient
 import net.minecraft.sound.SoundEvent
 import net.minecraft.sound.SoundEvents
 
-class tungstenArmorMaterial : ArmorMaterial {
+class TungstenArmorMaterial : ArmorMaterial {
     override fun getDurability(slot: EquipmentSlot): Int {
-        return BASE_DURABILITY[slot.entitySlotId] * 100
+        return BASE_DURABILITY[slot.entitySlotId]
     }
 
     override fun getProtectionAmount(slot: EquipmentSlot): Int {
@@ -41,7 +41,7 @@ class tungstenArmorMaterial : ArmorMaterial {
 
     // For reference, Leather uses {1, 2, 3, 1}, and Diamond/Netherite {3, 6, 8, 3}
     companion object {
-        private val BASE_DURABILITY = intArrayOf(13, 15, 16, 11)
-        private val PROTECTION_VALUES = intArrayOf(5, 22, 22, 5)
+        private val BASE_DURABILITY = intArrayOf(550, 750, 800, 650)
+        private val PROTECTION_VALUES = intArrayOf(5, 8, 12, 5)
     }
 }
