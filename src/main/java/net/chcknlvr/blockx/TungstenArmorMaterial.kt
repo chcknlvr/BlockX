@@ -32,7 +32,7 @@ class TungstenArmorMaterial : ArmorMaterial {
     }
 
     override fun getToughness(): Float {
-        return 5.0f
+        return 500.0f
     }
 
     override fun getKnockbackResistance(): Float {
