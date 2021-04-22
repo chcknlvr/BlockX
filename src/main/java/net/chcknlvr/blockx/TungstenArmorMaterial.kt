@@ -6,6 +6,7 @@ import net.minecraft.recipe.Ingredient
 import net.minecraft.sound.SoundEvent
 import net.minecraft.sound.SoundEvents
 
+
 class TungstenArmorMaterial : ArmorMaterial {
     override fun getDurability(slot: EquipmentSlot): Int {
         return BASE_DURABILITY[slot.entitySlotId]

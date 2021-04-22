@@ -1,6 +1,5 @@
 package net.chcknlvr.blockx;
 
-
 import net.chcknlvr.blockx.entity.DarkZombieEntity;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
@@ -30,6 +29,7 @@ public class Blockx implements ModInitializer {
     //Blocks
     public static final Block WOLFRAMITE = new Block(FabricBlockSettings.of(Material.METAL).strength(45.0f));
     public static final Block TUNGSTEN_BLOCK = new Block(FabricBlockSettings.of(Material.METAL).strength(45.0f));
+    public static final String MODID = "blockx";
     public static ToolItem TUNGSTEN_SWORD = new CustomFireproofSwordItem(TungstenMaterial.INSTANCE, 10, -3.0F, new Item.Settings().group(ItemGroup.COMBAT));
     public static ToolItem TUNGSTEN_SHOVEL = new CustomFireproofShovelItem(TungstenMaterial.INSTANCE, 1.5F, -3.0F, new Item.Settings().group(ItemGroup.TOOLS));
     public static ToolItem TUNGSTEN_PICKAXE = new CustomFireproofPickaxeItem(TungstenMaterial.INSTANCE, 1, -2.8F, new Item.Settings().group(ItemGroup.TOOLS));
@@ -53,8 +53,6 @@ public class Blockx implements ModInitializer {
                 stacks.add(new ItemStack(RegisterArmorItems.TUNGSTEN_BOOTS));
             })
             .build();
-
-
     @Override
     public void onInitialize() {
         FabricDefaultAttributeRegistry.register(DARK_ZOMBIE, DarkZombieEntity.createMobAttributes());
@@ -79,33 +77,32 @@ public class Blockx implements ModInitializer {
     }
 
     public static class CustomFireproofPickaxeItem extends PickaxeItem {
-        public CustomFireproofPickaxeItem(ToolMaterial material, int attackDamage, float attackSpeed, Settings settings) {
+        public CustomFireproofPickaxeItem(TungstenMaterial material, int attackDamage, float attackSpeed, Settings settings) {
             super(material, attackDamage, attackSpeed, settings.fireproof());
         }
     }
 
     public static class CustomFireproofAxeItem extends AxeItem {
-        public CustomFireproofAxeItem(ToolMaterial material, int attackDamage, float attackSpeed, Settings settings) {
+        public CustomFireproofAxeItem(TungstenMaterial material, int attackDamage, float attackSpeed, Settings settings) {
             super(material, attackDamage, attackSpeed, settings.fireproof());
         }
     }
 
     public static class CustomFireproofHoeItem extends HoeItem {
-        public CustomFireproofHoeItem(ToolMaterial material, int attackDamage, float attackSpeed, Settings settings) {
+        public CustomFireproofHoeItem(TungstenMaterial material, int attackDamage, float attackSpeed, Settings settings) {
             super(material, attackDamage, attackSpeed, settings.fireproof());
         }
     }
 
     public static class CustomFireproofSwordItem extends SwordItem {
-        public CustomFireproofSwordItem(ToolMaterial material, int attackDamage, float attackSpeed, Settings settings) {
+        public CustomFireproofSwordItem(TungstenMaterial material, int attackDamage, float attackSpeed, Settings settings) {
             super(material, attackDamage, attackSpeed, settings.fireproof());
         }
     }
 
     public static class CustomFireproofShovelItem extends ShovelItem {
-        public CustomFireproofShovelItem(ToolMaterial material, float attackDamage, float attackSpeed, Settings settings) {
+        public CustomFireproofShovelItem(TungstenMaterial material, float attackDamage, float attackSpeed, Settings settings) {
             super(material, attackDamage, attackSpeed, settings.fireproof());
         }
     }
-
 }
