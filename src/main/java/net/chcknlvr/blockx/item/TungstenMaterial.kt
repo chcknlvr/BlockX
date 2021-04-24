@@ -1,4 +1,4 @@
-package net.chcknlvr.blockx
+package net.chcknlvr.blockx.item
 
 import net.minecraft.item.ToolMaterial
 import net.minecraft.recipe.Ingredient
@@ -25,7 +25,7 @@ class TungstenMaterial : ToolMaterial {
     }
 
     override fun getRepairIngredient(): Ingredient {
-        return Ingredient.ofItems(Blockx.TUNGSTEN_INGOT)
+        return Ingredient.ofItems(Items.TUNGSTEN_INGOT)
     }
 
     companion object {

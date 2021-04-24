@@ -1,4 +1,4 @@
-package net.chcknlvr.blockx
+package net.chcknlvr.blockx.item
 
 import net.minecraft.entity.EquipmentSlot
 import net.minecraft.item.ArmorMaterial
@@ -25,7 +25,7 @@ class TungstenArmorMaterial : ArmorMaterial {
     }
 
     override fun getRepairIngredient(): Ingredient {
-        return Ingredient.ofItems(Blockx.TUNGSTEN_INGOT)
+        return Ingredient.ofItems(Items.TUNGSTEN_INGOT)
     }
 
     override fun getName(): String {

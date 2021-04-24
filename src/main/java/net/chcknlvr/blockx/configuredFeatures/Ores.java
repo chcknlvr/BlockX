@@ -1,5 +1,6 @@
-package blockx.blockx;
+package net.chcknlvr.blockx.configuredFeatures;
 
+import net.chcknlvr.blockx.block.Blocks;
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
 import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
 import net.minecraft.util.Identifier;
@@ -17,7 +18,7 @@ public class Ores {
     private static final ConfiguredFeature<?, ?> WOLFRAMITE_NETHER = Feature.ORE
             .configure(new OreFeatureConfig(
                     OreFeatureConfig.Rules.BASE_STONE_NETHER,
-                    Blockx.WOLFRAMITE.getDefaultState(),
+                    Blocks.WOLFRAMITE.getDefaultState(),
                     4)) // vein size
             .decorate(Decorator.RANGE.configure(new RangeDecoratorConfig(
                     0,

@@ -2,7 +2,7 @@ package net.chcknlvr.blockx.mixin;
 
 import com.google.common.collect.ImmutableMultimap;
 import com.google.common.collect.Multimap;
-import net.chcknlvr.blockx.RegisterArmorItems;
+import net.chcknlvr.blockx.item.RegisterArmorItems;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.attribute.EntityAttribute;
 import net.minecraft.entity.attribute.EntityAttributeModifier;

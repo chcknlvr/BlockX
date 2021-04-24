@@ -1,4 +1,4 @@
-package net.chcknlvr.blockx
+package net.chcknlvr.blockx.item
 
 import net.minecraft.item.Item
 
