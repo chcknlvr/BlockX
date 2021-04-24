@@ -52,7 +52,7 @@ public class Blockx implements ModInitializer {
         Registry.register(Registry.BLOCK, new Identifier("blockx", "tungsten_block"), Blocks.TUNGSTEN_BLOCK);
         Registry.register(Registry.ITEM, new Identifier("blockx", "tungsten_block"), new BlockItem(Blocks.TUNGSTEN_BLOCK, new FabricItemSettings().group(Blockx.BLOCKX).fireproof()));
 
-        Ores.oreRegister();
+        Ores.register();
         RegisterArmorItems.register();
 
     }

@@ -15,20 +15,18 @@ import net.minecraft.world.gen.feature.Feature;
 import net.minecraft.world.gen.feature.OreFeatureConfig;
 
 public class Ores {
-    private static final ConfiguredFeature<?, ?> WOLFRAMITE_NETHER = Feature.ORE
+    private static ConfiguredFeature<?, ?> WOLFRAMITE_NETHER = Feature.ORE
             .configure(new OreFeatureConfig(
-                    OreFeatureConfig.Rules.BASE_STONE_NETHER,
+                OreFeatureConfig.Rules.BASE_STONE_NETHER,
                     Blocks.WOLFRAMITE.getDefaultState(),
-                    4)) // vein size
+                    9)) // vein size
             .decorate(Decorator.RANGE.configure(new RangeDecoratorConfig(
                     0,
                     0,
                     15)))
             .spreadHorizontally()
             .repeat(2); // number of veins per chunk
-
-
-    public static void oreRegister() {
+    public static void register() {
         RegistryKey<ConfiguredFeature<?, ?>> wolframiteNether = RegistryKey.of(Registry.CONFIGURED_FEATURE_WORLDGEN,
                 new Identifier("blockx", "wolframite_nether"));
         Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, wolframiteNether.getValue(), WOLFRAMITE_NETHER);
