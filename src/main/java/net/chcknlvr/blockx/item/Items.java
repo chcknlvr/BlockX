@@ -8,12 +8,12 @@ import net.minecraft.item.ToolItem;
 
 public class Items {
     //Tools
-    public static ToolItem TUNGSTEN_SWORD = new Blockx.CustomFireproofSwordItem(TungstenMaterial.INSTANCE, 10, -3.0F, new Item.Settings().group(ItemGroup.COMBAT));
-    public static ToolItem TUNGSTEN_SHOVEL = new Blockx.CustomFireproofShovelItem(TungstenMaterial.INSTANCE, 1.5F, -3.0F, new Item.Settings().group(ItemGroup.TOOLS));
-    public static ToolItem TUNGSTEN_PICKAXE = new Blockx.CustomFireproofPickaxeItem(TungstenMaterial.INSTANCE, 1, -2.8F, new Item.Settings().group(ItemGroup.TOOLS));
-    public static ToolItem TUNGSTEN_AXE = new Blockx.CustomFireproofAxeItem(TungstenMaterial.INSTANCE, 15, -3.5F, new Item.Settings().group(ItemGroup.TOOLS));
-    public static ToolItem TUNGSTEN_HOE = new Blockx.CustomFireproofHoeItem(TungstenMaterial.INSTANCE, -9, 0.0F, new Item.Settings().group(ItemGroup.TOOLS));
+    public static ToolItem TUNGSTEN_SWORD = new CustomToolItems.CustomFireproofSwordItem(TungstenMaterial.INSTANCE, 10, -3.0F, new Item.Settings().group(Blockx.BLOCKX));
+    public static ToolItem TUNGSTEN_SHOVEL = new CustomToolItems.CustomFireproofShovelItem(TungstenMaterial.INSTANCE, 1.5F, -3.0F, new Item.Settings().group(Blockx.BLOCKX));
+    public static ToolItem TUNGSTEN_PICKAXE = new CustomToolItems.CustomFireproofPickaxeItem(TungstenMaterial.INSTANCE, 1, -2.8F, new Item.Settings().group(Blockx.BLOCKX));
+    public static ToolItem TUNGSTEN_AXE = new CustomToolItems.CustomFireproofAxeItem(TungstenMaterial.INSTANCE, 15, -3.5F, new Item.Settings().group(Blockx.BLOCKX));
+    public static ToolItem TUNGSTEN_HOE = new CustomToolItems.CustomFireproofHoeItem(TungstenMaterial.INSTANCE, -9, 0.0F, new Item.Settings().group(Blockx.BLOCKX));
     //Items
-    public static final Item TUNGSTEN_SCRAP = new FireProofItem(new FabricItemSettings().group(ItemGroup.MISC));
-    public static final Item TUNGSTEN_INGOT = new FireProofItem(new FabricItemSettings().group(ItemGroup.MISC));
+    public static final Item TUNGSTEN_SCRAP = new FireProofItem(new FabricItemSettings().group(Blockx.BLOCKX));
+    public static final Item TUNGSTEN_INGOT = new FireProofItem(new FabricItemSettings().group(Blockx.BLOCKX));
 }
