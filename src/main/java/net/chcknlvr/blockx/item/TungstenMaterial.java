@@ -1,6 +1,5 @@
 package net.chcknlvr.blockx.item;
 
-import net.chcknlvr.blockx.Blockx;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
 

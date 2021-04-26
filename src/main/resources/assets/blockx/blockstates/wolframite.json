@@ -1,7 +1,5 @@
 {
   "variants": {
-    "": {
-      "model": "blockx:block/wolframite"
-    }
+    "": { "model": "blockx:block/wolframite" }
   }
 }

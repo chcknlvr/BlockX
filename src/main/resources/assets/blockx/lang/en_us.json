@@ -1,15 +1,16 @@
 {
   "item.blockx.tungsten_ingot": "Tungsten Ingot",
+  "item.blockx.tungsten_scrap": "Tungsten Scrap",
   "item.blockx.tungsten_sword": "Tungsten Sword",
   "item.blockx.tungsten_axe": "Tungsten Axe",
   "item.blockx.tungsten_pickaxe": "Tungsten Pickaxe",
   "item.blockx.tungsten_shovel": "Tungsten Shovel",
   "item.blockx.tungsten_hoe": "Tungsten Hoe",
-  "block.blockx.wolframite": "Wolframite",
-  "block.blockx.tungsten_block": "Tungsten Block",
-  "itemGroup.blockx.blockx": "BlockX Items",
   "item.blockx.tungsten_helmet": "Tungsten Helmet",
   "item.blockx.tungsten_chestplate": "Tungsten Chestplate",
   "item.blockx.tungsten_leggings": "Tungsten Leggings",
-  "item.blockx.tungsten_boots": "Tungsten Boots"
+  "item.blockx.tungsten_boots": "Tungsten Boots",
+  "block.blockx.wolframite": "Wolframite",
+  "block.blockx.tungsten_block": "Tungsten Block",
+  "itemGroup.blockx.blockx": "BlockX Items"
 }
