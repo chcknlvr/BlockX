@@ -12,5 +12,6 @@
   "item.blockx.tungsten_boots": "Tungsten Boots",
   "block.blockx.wolframite": "Wolframite",
   "block.blockx.tungsten_block": "Tungsten Block",
-  "itemGroup.blockx.blockx": "BlockX Items"
+  "itemGroup.blockx.blockx": "BlockX Items",
+  "biome.tutorial.obsiland": "Obsiland"
 }

@@ -1,7 +1,5 @@
 package net.chcknlvr.blockx.block;
 
-import net.chcknlvr.blockx.Blockx;
-import net.chcknlvr.blockx.ItemGroup.ItemGroup;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.BlockItem;
 import net.minecraft.util.Identifier;
