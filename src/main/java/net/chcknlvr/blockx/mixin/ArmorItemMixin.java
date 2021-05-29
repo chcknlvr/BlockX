@@ -22,7 +22,6 @@ import java.util.UUID;
 
 @Mixin(ArmorItem.class)
 public abstract class ArmorItemMixin {
-
     @Shadow
     @Final
     private static UUID[] MODIFIERS;
