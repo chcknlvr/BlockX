@@ -1,6 +1,5 @@
 package net.chcknlvr.blockx;
 
-import net.chcknlvr.blockx.Features.Ores;
 import net.chcknlvr.blockx.ItemGroup.ItemGroup;
 import net.chcknlvr.blockx.block.RegisterBlocks;
 import net.chcknlvr.blockx.item.RegisterArmorItems;
@@ -17,7 +16,6 @@ public class Blockx implements ModInitializer {
     @Override
     public void onInitialize() {
         ItemGroup.register();
-        Ores.register();
         RegisterItems.register();
         RegisterArmorItems.register();
         RegisterBlocks.register();
