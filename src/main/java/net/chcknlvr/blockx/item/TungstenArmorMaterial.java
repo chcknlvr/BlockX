@@ -13,7 +13,7 @@ class TungstenArmorMaterial implements ArmorMaterial {
 
     @Override
     public int getDurability(EquipmentSlot slot) {
-        return BASE_DURABILITY[slot.getEntitySlotId()] * 50;
+        return BASE_DURABILITY[slot.getEntitySlotId()] * 100;
     }
 
     @Override
@@ -50,4 +50,5 @@ class TungstenArmorMaterial implements ArmorMaterial {
     public float getKnockbackResistance() {
         return 0.9F;
     }
+
 }
