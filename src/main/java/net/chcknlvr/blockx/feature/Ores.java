@@ -1,4 +1,4 @@
-package net.chcknlvr.blockx.features;
+package net.chcknlvr.blockx.feature;
 
 import net.chcknlvr.blockx.block.Blocks;
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
