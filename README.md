@@ -2,7 +2,7 @@
 
 ## The biggest fabric mod ever
 
-**BlockX** is a mod that's goal is to be the biggest fabric mod there is.
+**BlockX** is a mod that's goal a fun and useful mod for fabric.
 
 Curseforge download: None Yet
 
